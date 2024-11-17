@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 2em;
+    color: white;
+    text-shadow:0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan;
+
+    user-select: none;
+    font-weight: 600;
+}
+
+.menu a {
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.menu a:hover,
+a.active {
+    color: #333;
+    background: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#heading {
+    position: absolute;
+    top: 20%;
+    font-size: 4em;
+    color: #fff;
+    
+    text-shadow: 2px 4px 5px #232121;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#moon {
+    width: 300px;
+    top: 40%;
+    right: 20%;
+}
+
+.parallax img#mountain {
+    position: fixed;
+    bottom: 0;
+}
+
+.parallax img#grass {
+    bottom: -5%;
+}
+
+section {
+    position: relative;
+    background-color: #020912;
+    padding: 30px 100px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+section {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+    }
+
+    .parallax img#mountain {
+        bottom: 20%;
+    }
+
+    .parallax img#grass {
+        bottom: -10%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 468px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #logo {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+        top: 65%;
+        right: 10%;
+    }
+
+    .parallax img#mountain {
+        width: 130%;
+        bottom: 20%;
+    }
+
+    .parallax img#grass {
+        bottom: -5%;
+        width: 130%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+/* h1, h2 {
+    text-align: center; */
+  /* } */
+  
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    padding: 5px 10px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expenses-list {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: aqua;
+    color: black;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    center{
+    text-shadow:0px 0px 10px cyan,
+                0px 0px 20px cyan,
+                0px 0px 40px cyan,
+                0px 0px 80px cyan;
+
+  }
+p{
+
+    color: white;
+    padding-bottom: 100px;
+} 
+#ledger{
+    border: 5px aqua solid;
+    border-radius: 8px;
+}
+#about,#contact{
+    padding-top: 100px;
+}
+p{
+    text-align: center;
+}

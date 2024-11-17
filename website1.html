@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        
+        <div id="logo">Money Buddy</div>
+
+        <div class="menu">
+            <a href="LOGIN PAGE.html">Login</a>
+            <a href="#logo">Home</a>
+            <a href="#ledger">Ledger</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <div class="parallax">
+        <h2 id="heading">Your own finance manager</h2>
+        <img src="https://imgs.search.brave.com/kFhRTRVt0mcrtZssCueH0AsmomqRAdX9nKyb32Bt-qk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODBiNTg1YjJlZGJj/ZTI0YzQ3YjI3MGIu/cG5n" alt="" id="moon">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-toronto-city-skylinecitycitiesskylineskyscrapers-251520164696be45t.png" alt="" id="mountain">
+        <img src="grasss.png"  alt="" id="grass">
+    </div>
+
+    <section id="ledger">
+        <h2 class="ml"><CENTer>Ledger</CENTer></h2>
+
+
+        <div class="input-section">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Rent">Rent</option>
+                <option value="Transport">Transport</option>
+                <option value="Relaxing">Relaxing</option>
+            </select>
+            <label for="amount-input">Amount:</label>
+            <input type="number" id="amount-input">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="expenses-list">
+            <h2>Expenses List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="expnese-table-body">
+    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total:</td>
+                        <td id="total-amount"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <hr>
+        <h2 id="about"><center>About</center></h2>
+<p>This project is a user-friendly web application where users can manage their personal finances by logging their income and expenses. It provides insights into spending habits, helps set financial goals, and generates visual reports through interactive charts and graphs. The user can track their budget and receive notifications if they exceed their spending limits.</p> 
+<hr>
+<h2 id="contact"><center>Contact</center></h2>
+
+<p>GMAIL:- abc@gmail.com <br> PHONE NO. :- XXXXXXXXXX</p>
+</section>
+<!-- <footer>All rights of this site belong to Suryansh Choudhary</footer> -->
+
+
+
+
+
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
